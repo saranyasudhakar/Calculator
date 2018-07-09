@@ -1,0 +1,72 @@
+<! DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<!--<script src="main.js"></script>-->
+
+<body>
+  <h1>Javascript Calculator</h1>
+  
+  <div id="display">
+    <form>
+      
+      <input type="textbox" id="calc" disabled><br>
+      <input type="button" id="keys" value="AC" onclick="addtoScreen('AC')">
+      <input type="button" id="keys" value="CE" onclick="backspace()">
+      <input type="button" id="keys" value="+" onclick="addtoScreen('+')">
+      <input type="button" id="keys" value="%" onclick="addtoScreen('%')">
+                                                                        
+			<br>
+                                                                       
+      <input type="button" id="keys" value="7" onclick="addtoScreen('7')">
+      <input type="button" id="keys" value="8" onclick="addtoScreen('8')">
+      <input type="button" id="keys" value="9" onclick="addtoScreen('9')">
+      <input type="button" id="keys" value="*" onclick="addtoScreen('*')">
+      <br>
+      <input type="button" id="keys" value="4" onclick="addtoScreen('4')">
+      <input type="button" id="keys" value="5" onclick="addtoScreen('5')">
+      <input type="button" id="keys" value="6" onclick="addtoScreen('6')">                   
+			<input type="button" id="keys" value="-" onclick="addtoScreen('-')">                  
+			<br>
+      <input type="button" id="keys" value="1" onclick="addtoScreen('1')">
+      <input type="button" id="keys" value="2" onclick="addtoScreen('2')">
+      <input type="button" id="keys" value="3" onclick="addtoScreen('3')">                    
+			<input type="button" id="keys" value="/" onclick="addtoScreen('/')">                  
+			<br>            
+            <input type="button" id="keys" value="0" onclick="addtoScreen('0')">
+              <input type="button" id="keys" value="." onclick="addtoScreen('.')"> 
+			<input type="button" id="equal" value="=" onclick="answer()">                                               
+    
+         <h2>JS Calculator</h2>
+
+    </form>
+  </div>
+	<script>
+	var box = document.getElementById('calc');
+function addtoScreen(x)
+{
+  
+   box.value += x;
+  if(x==='AC')
+    box.value='';
+}
+function answer(){
+ 
+  x=box.value;
+  x=eval(x);
+  box.value=x;
+}
+
+function backspace(){
+  var num=box.value;
+  var len=num.length-1;
+  var newnum=num.substring(0,len);
+  box.value=newnum;
+}
+</script>
+</body>
+
+</html>

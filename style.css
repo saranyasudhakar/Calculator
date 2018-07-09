@@ -1,0 +1,46 @@
+body{
+  background-image:url("https://i.pinimg.com/originals/f8/a4/19/f8a4192ae9790d8765809543eeba1007.jpg");
+  text-align:center;
+}
+h1{
+  font-size:70px;
+  color:white;
+  text-shadow:0px 0px 2px 2px;
+  
+  
+}
+#display{
+  
+  height:370px;
+  width:260px;
+  border:3px solid gray;
+  border-radius:20px;
+  background-color:gray;
+  margin:10px auto;
+  padding:20px;
+  box-shadow:0px 0px 3px 6px #ccc;
+  
+}
+#calc{
+  font-size:15px ;
+  height:40px;
+  margin:20px;
+  border-radius:5px;
+  width:15em;
+  text-align:right;
+  
+}
+#keys{
+  width:45px;
+  height:90px;
+  margin:4px;
+  font-size:150px ;
+  padding:5px;
+  box-shadow:0px 0px 2px 1px black;
+}
+#equal{
+  width:105px;
+  padding:30px;
+  height:80px;
+  font-size:15em;
+}
